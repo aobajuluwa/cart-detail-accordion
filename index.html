@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" class=" ext-strict">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="https://getbootstrap.com/docs/3.3/favicon.ico">
+        <!-- Bootstrap core CSS -->
+        <link href="../Bootstrap Starter/Starter Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="../Bootstrap Starter/Starter Template for Bootstrap_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+        <!-- CCRZ stylesheet -->
+        <link rel="stylesheet" type="text/css" href="./Tiered Pricing for Subscriptions_files/ccrz-libs.min.css">
+        <!-- Font Awesome stylesheet -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style type="text/css">a#link-to-fond:hover{background-color:#fff;color:#4e80ff!important}a#link-to-fond:visited{color:#fff}#close-fond-bar:hover{cursor:pointer}#fond-bar{display:block;height:50px;max-height:60px;min-height:10px;background-color:#147bd1;padding:5px 5px 5px 10px;position:fixed;left:0;top:42px;margin-top:-60px;width:100%;z-index:999999;text-align:center;-webkit-box-sizing:initial;box-sizing:initial}#fond-bar-container{display:inline-block;width:98%;margin:0;position:relative;line-height:32px;max-height:32px}#fond-text{position:relative;color:#fff!important;font-size:16px!important;text-align:centecenter!important;margin:0!important;float:left!important;text-shadow:none!important;padding:4px!important;line-height:60px;vertical-align:middle;width:100%}#fond-text,#link-to-fond{font-family:walsheim,Arial!important}#link-to-fond{color:#fff;font-size:14px!important;font-weight:400!important;border:1px solid #fff;padding:6px 20px;border-radius:2px;text-decoration:none!important;margin-left:12px}#fond-small{width:24px;height:24px;margin-right:8px;margin-top:-2px;vertical-align:middle;display:inline!important}#close-fond-bar{position:absolute;top:26px;right:5px;width:14px;z-index:999999;font-family:Arial;font-size:12px}</style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <div class="header">
+                    <div class="navbar-inverse">
+                        <div class="container">
+                            <div class="row">
+                                <small>
+                                    <div class="col-md-4 col-xs-12">
+                                        <p class="header-spacer visible-md-*"></p>
+                                        <div class="navbar-header pull-left">
+                                            <span class="misc-function">
+                                                <ul class="list-inline navbar-nav">
+                                                    <li class="effAccountt" data-toggle="modal" data-target="#effAccounts">
+                                                        <a href="#">Central Perc Coffee (CPC) - San Jose<span class="launchSel cc_launch_sel" aria-hidden="true"></span></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="modal fade" id="effAccounts" tabindex="-1" role="dialog" aria-labelledby="effAccountsLabel">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                <h4 class="modal-title" id="effAccountsLabel">Effective Account Selection</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-hover">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Name</th>
+                                                                                <th>Account Number</th>
+                                                                                <th>Address</th>
+                                                                                <th></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Atlantic Coffee</td>
+                                                                                <td>AC01</td>
+                                                                                <td>180 Clarendon Street<br>Boston, MA 02116<br></td>
+                                                                                <td><a href="#"><i class="pickSel pickAccount fa fa-chevron-right" data-id="001B000000p9HY9IAM" aria-hidden="true"></i><span class="sr-only">Select Account</span></a></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Pacific Coffee</td>
+                                                                                <td>PC01</td>
+                                                                                <td>100 3rd Street<br>Santa Monica, CA 90401<br></td>
+                                                                                <td><a href="#"><i class="pickSel pickAccount fa fa-chevron-right" data-id="001B000000o2qBFIAY" aria-hidden="true"></i><span class="sr-only">Select Account</span></a></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Central Perc Coffee</td>
+                                                                                <td>CPC</td>
+                                                                                <td>178 San Jose Ave<br>San Jose, CA 95125<br>US</td>
+                                                                                <td><a href="#"><i class="pickSel pickAccount cc_pick_account fa fa-chevron-right" data-id="001B000000o2qB2IAI" aria-hidden="true"></i><span class="sr-only">Select Account</span></a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                            <span class="lssec">
+                                                <ul class="list-inline navbar-nav">
+                                                    <li><a class="changeLocale" href="#">Locale: en_US </a></li>
+                                                </ul>
+                                                <div id="modalSecLocale"></div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-xs-12">
+                                        <p class="header-spacer visible-md-*"></p>
+                                        <div class="navbar-header pull-right">
+                                            <ul class="list-inline navbar-nav">
+                                                <li><a href="#" id="goToAccount"><i class="fa fa-user" aria-hidden="true"></i><span>&nbsp;My Account</span></a></li>
+                                                <li><a href="#" id="cartHeader" class="chead cartHeaderLink">
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    <span>My Cart: 1 item,&nbsp;$25.00</span>
+                                                    </a>
+                                                </li>
+                                                <li class="loginoutsec">
+                                                    <a href="#" class="doLogout"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Logout Lauren Boyle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12 pull-right">
+                                        <ul class="nav">
+                                            <li>
+                                                <div class="search_form">
+                                                    <div class="navbar-form" role="search">
+                                                        <div class="input-group">
+                                                            <input id="searchText" type="text" class="form-control search_input ui-autocomplete-input" placeholder="Search Products" title="Product search, at least 2 characters are required" data-trigger="focus" autocomplete="off">
+                                                            <span class="input-group-btn">
+                                                            <button id="doSearch" class="btn btn-default search_button" type="Submit" data-original-title="" title=""><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <span data-trigger="manual" data-placement="bottom" data-content="Product search, at least 2 characters are required"></span>
+                                                    <div class="searchTopBarErrorMessage searchBoxWidgetError"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" id="logoUrl">
+                        <div class="center-block"></div>
+                    </a>
+                </div>
+                <div class="menu_container">
+                    <div id="secnav">
+                        <nav class="navbar navbar-default navbar-static-top">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <!--***********-->
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div id="navbar" class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav cc_navbar-nav">
+                                        <li><a href="#" id="phoneLogo" class="cc_phone_logo"><span class="sr-only">Home</span><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                                        <li class="dropdown cc_dropdown"><a class="menuTypeURL cc_menu_type_url" href="#" data-href="ccrz__HomePage" data-menuid="1">Home</a></li>
+                                        <li class="dropdown cc_dropdown">
+                                            <a href="#" class="dropdown-toggle cc_dropdown_toggle" data-toggle="dropdown" data-menuid="2" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+                                            <ul class="dropdown-menu cc_dropdown-menu">
+                                                <li><a href="#" class="cc_category" data-category="">ALL PRODUCTS</a></li>
+                                                <li><a href="#" class="cc_category" data-category="">ACCESSORIES</a></li>
+                                                <li><a href="#" class="cc_category" data-category="">COFFEE</a></li>
+                                                <li><a href="#" class="cc_category" data-category="">COFFEE MACHINE</a></li>
+                                                <li><a href="#" class="cc_category" data-category="">ESPRESSO</a></li>
+                                                <li><a href="#" class="cc_category" data-category="">GRINDERS</a></li>
+                                                <li><a href="#" class="cc_category" data-category="">USAGE</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown cc_dropdown"><a class="menuTypeURL cc_menu_type_url" href="#" data-href="ccrz__CCPage?pagekey=contactus" data-menuid="3">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <!--***************-->
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+             
+            <div class="home_slider cc_home_slider">
+                <span id="Cart:cc_tmpl_OneColRD:cc_tmpl_Storefront:j_id99">
+                    <div id="Cart:cc_tmpl_OneColRD:cc_tmpl_Storefront:j_id99:cc_Hero:j_id100" class="main_page_title cart en_US"></div>
+                </span>
+                <div class="container cc_breadrumb_container" id="breadcrumb_desktop_container">
+                </div>
+            </div>
+            <div class="contentBody cc_content_body">
+                <div class="container cc_main_container cc_tmpl_OneColRD cc_main_content_col">
+                    <div class="warning"> </div>
+                    <div class="warning"> </div>
+                    <div class="warning"> </div>
+                    <div class="cartContainer">
+                        <div class="panel panel-default cc_panel cc_panel_shopping_cart">
+                            <div class="panel-body cc_body">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h2 class="title cc_title">Shopping Cart</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div id="cart_items_container" class="cc_cart_item_container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="messagingSection-Error" role="alert" style="display: none"></div>
+                                                    <div class="messagingSection-Warning" role="alert" style="display: none"></div>
+                                                    <div class="messagingSection-Info" role="alert" style="display: none"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="cart_sort cc_cart_sort">
+                                                        <span class="cc_cart_sort_text">Sort</span>
+                                                        <a href="https://win19ss-test1-165c68767ee-165fd4991b1.force.com/CapStore/ccrz__Cart?cartId=f30401be-c9bc-4b85-a7fe-04ba2bf6d331&amp;viewState=&amp;portalUser=&amp;store=&amp;effectiveAccount=001B000000o2qB2IAI&amp;cclcl=en_US#" class="cart_sort_item cc_cart_sort_item" data-sort="name"><span class="label label-default cc_cart_sort_text">Name</span></a>
+                                                        <a href="https://win19ss-test1-165c68767ee-165fd4991b1.force.com/CapStore/ccrz__Cart?cartId=f30401be-c9bc-4b85-a7fe-04ba2bf6d331&amp;viewState=&amp;portalUser=&amp;store=&amp;effectiveAccount=001B000000o2qB2IAI&amp;cclcl=en_US#" class="cart_sort_item cc_cart_sort_item" data-sort="sku"><span class="label label-default cc_cart_sort_text">SKU</span></a>
+                                                        <a href="https://win19ss-test1-165c68767ee-165fd4991b1.force.com/CapStore/ccrz__Cart?cartId=f30401be-c9bc-4b85-a7fe-04ba2bf6d331&amp;viewState=&amp;portalUser=&amp;store=&amp;effectiveAccount=001B000000o2qB2IAI&amp;cclcl=en_US#" class="cart_sort_item cc_cart_sort_item" data-sort="dateAdded"><span class="label label-default cc_cart_sort_text">Date Added</span></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="cart_item_list cc_cart_item_list">
+                                                <div class="cart_item wishFinder a0HB00000026H2jMAE cc_cart_item" data-sku="">
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="cc_cart_product_image">
+                                                                        <a href="javascript:void(0);" onclick="CCRZ.goToPDP(this)" class="cc_prod_link" data-product="{&quot;name&quot;:&quot;Bella Chrome Coffee Machine&quot;,&quot;SKU&quot;:&quot;B-C-COFMAC-001&quot;}" data-id="B-C-COFMAC-001"><img class="cart img-responsive" src="./BC-COFMAC.jpeg" alt="Bella Chrome Coffee Machine" data-id="B-C-COFMAC-001"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="item_title cc_item_title">
+                                                                <a href="javascript:void(0);" onclick="CCRZ.goToPDP(this)" class="cc_prod_link" data-product="{&quot;name&quot;:&quot;Bella Chrome Coffee Machine&quot;,&quot;SKU&quot;:&quot;B-C-COFMAC-001&quot;}" data-id="B-C-COFMAC-001">Bella Chrome Coffee Machine</a>
+                                                            </p>
+                                                            <div class="sku cc_sku">
+                                                                <span class="cc_label">SKU</span>
+                                                                <span class="cc_value">B-C-COFMAC-001</span>
+                                                            </div>
+                                                            <div class="cart-links">
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Additional Info</a>
+                                                                &nbsp;|&nbsp;
+                                                                <a href="https://win19ss-test1-165c68767ee-165fd4991b1.force.com/CapStore/ccrz__Cart?cartId=f30401be-c9bc-4b85-a7fe-04ba2bf6d331&amp;viewState=&amp;portalUser=&amp;store=&amp;effectiveAccount=001B000000o2qB2IAI&amp;cclcl=en_US#comments_a0HB00000026H2jMAE" id="commentsLink cc_comments_link" data-toggle="modal">Comments</a>
+                                                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                                    <h5>
+                                                                        Bella Chrome Coffee Machine Details
+                                                                    </h5>
+                                                                    <div class="sku cc_sku">
+                                                                        <span class="cc_label">SKU</span>
+                                                                        <span class="cc_value">B-C-COFMAC-001</span>
+                                                                    </div>
+                                                                    <p class="cc_short_desc">
+                                                                        The ultimate in coffee making luxury. Create up to three gourmet coffees at the same time. Granular control of the froth and foaminess. Can create a coffee in under 60 minutes
+                                                                    </p>
+                                                                </div>
+                                                                <div id="comments_a0HB00000026H2jMAE" class="modal fade cc_modal cc_cart_comments_modal" tabindex="-1" role="dialog" aria-labelledby="CartCommentsLabel">
+                                                                    <div class="modal-dialog" role="document">
+                                                                        <div class="modal-content cc_modal_content">
+                                                                            <div class="modal-header cc_modal_header">
+                                                                                <button type="button" class="close cc_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                                <h4 class="modal-title cc_modal_title" id="CartCommentsLabel">
+                                                                                    Bella Chrome Coffee Machine
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="modal-body cc_modal_body">
+                                                                                <form id="commentsForma0HB00000026H2jMAE" class="cc_comments_form">
+                                                                                    <textarea placeholder="Enter comments here..." name="note" class="commentField form-control cc_comment_field"></textarea>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <input type="button" class="saveComment btn btn-default btn-sm cc_save_comment" data-id="a0HB00000026H2jMAE" value="Save">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messagingSection-a0HB00000026H2jMAE-Error" style="display: none"></div>
+                                                            <div class="messagingSection-a0HB00000026H2jMAE-Info alert-dismissible" style="display: none"><button type="button" class="close cc_close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                                            <div class="form-group wishFinder cc_wish_finder" data-sku="B-C-COFMAC-001">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <button type="button" class="btn btn-default btn-sm deleteItem removeItemButton cc_remove_item_button" data-dismiss="modal" aria-hidden="true" data-id="a0HB00000026H2jMAE">delete</button>
+                                                                        <div class="wishButtons cc_wish_buttons">
+                                                                            <div class="btn-group dropdown form-group">
+                                                                                <button type="button" class="btn btn-default btn-sm pickWish" data-id="a0IB0000004bQIgMAM">Add to Wishlist</button>
+                                                                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                <span class="caret"></span>
+                                                                                <span class="sr-only">Toggle Dropdown</span>
+                                                                                </button>
+                                                                                <ul class="dropdown-menu" aria-labelledby="dropWish">
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="a0IB0000004bQIhMAM">Coffee Beans</a></li>
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="a0IB0000004bQIgMAM">Equipment</a></li>
+                                                                                    <li role="separator" class="divider"></li>
+                                                                                    <li>
+                                                                                        <div class="row center-block">
+                                                                                            <div class="col-xs-12">
+                                                                                                <label for="newWishList" class="sr-only">
+                                                                                                    <p>Enter new template name</p>
+                                                                                                </label>
+                                                                                                <input id="newWishList" type="text" class="newListName form-control" placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="-1">Create Template</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="quantity cc_quantity" data-id="a0HB00000026H2jMAE">
+                                                                <div class="plus_minus cc_plus-minus gp_quantity_block" data-id="a0HB00000026H2jMAE">
+                                                                    <div class="row cc_qty_control_row">
+                                                                        <div class="col-md-8 col-md-offset-4">
+                                                                            <div class="form-group">
+                                                                                <div class="input-group cc_input_group">
+                                                                                    <span class="input-group-btn cc_input_group_btn">
+                                                                                    <input type="button" value="-" class="btn btn-default btn-sm minus cc_minus">
+                                                                                    </span>
+                                                                                    <input id="entry_a0HB00000026H2jMAE" type="text" name="qty" value="1" class="input-text entry plus_minus form-control input-sm cc_entry" maxlength="7">
+                                                                                    <span class="input-group-btn cc_input_group_btn">
+                                                                                    <input type="button" value="+" class="btn btn-default btn-sm plus cc_plus">
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="hidden" name="qtyIncrement" value="1" class="item_qtyIncrement">
+                                                                    <input type="hidden" name="qtySkipIncrement" value="" class="item_qtySkipIncrement">
+                                                                </div>
+                                                            </div>
+                                                            <div class="price_block cc_price_block pull-right">
+                                                                <p class="price cc_price">
+                                                                    <span class="cc_label">Price</span>
+                                                                    <span class="cc_value">$2,800.00</span>
+                                                                </p>
+                                                                <p class="price cc_price">
+                                                                    <span class="cc_label">Total</span>
+                                                                    <span class="cc_value">$2,800.00</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                </div>
+                                                <div class="cart_item wishFinder a0HB00000026H0YMAU cc_cart_item" data-sku="">
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="cc_cart_product_image">
+                                                                        <a href="javascript:void(0);" onclick="CCRZ.goToPDP(this)" class="cc_prod_link" data-product="{&quot;name&quot;:&quot;Stainless Steel Thermal Carafe&quot;,&quot;SKU&quot;:&quot;SSTC-1&quot;}" data-id="SSTC-1"><img class="cart img-responsive" src="./vss-508-coffee-pot-b1_1.jpg" alt="Stainless Steel Thermal Carafe" data-id="SSTC-1"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="item_title cc_item_title">
+                                                                <a href="javascript:void(0);" onclick="CCRZ.goToPDP(this)" class="cc_prod_link" data-product="{&quot;name&quot;:&quot;Stainless Steel Thermal Carafe&quot;,&quot;SKU&quot;:&quot;SSTC-1&quot;}" data-id="SSTC-1">Stainless Steel Thermal Carafe</a>
+                                                            </p>
+                                                            <div class="sku cc_sku">
+                                                                <span class="cc_label">SKU</span>
+                                                                <span class="cc_value">SSTC-1</span>
+                                                            </div>
+                                                            <div class="cart-links">
+                                                                <a class="included_items cc_included_items" href="https://win19ss-test1-165c68767ee-165fd4991b1.force.com/CapStore/ccrz__Cart?cartId=f30401be-c9bc-4b85-a7fe-04ba2bf6d331&amp;viewState=&amp;portalUser=&amp;store=&amp;effectiveAccount=001B000000o2qB2IAI&amp;cclcl=en_US#additional_infoa0HB00000026H0YMAU" id="additionalInfoLink" data-toggle="modal">Additional Info</a>
+                                                                &nbsp;|&nbsp;
+                                                                <div id="additional_infoa0HB00000026H0YMAU" class="modal fade cc_modal cc_cart_additional_info_modal" tabindex="-1" role="dialog" aria-labelledby="CartAddtlInfoLabel">
+                                                                    <div class="modal-dialog" role="document">
+                                                                        <div class="modal-content cc_modal_content">
+                                                                            <div class="modal-header cc_modal_header">
+                                                                                <button type="button" class="close cc_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                                <h4 class="modal-title cc_modal_title" id="CartAddtlInfoLabel">
+                                                                                    Stainless Steel Thermal Carafe Details
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="modal-body cc_modal_body">
+                                                                                <div class="sku cc_sku">
+                                                                                    <span class="cc_label">SKU</span>
+                                                                                    <span class="cc_value">SSTC-1</span>
+                                                                                </div>
+                                                                                <p class="cc_short_desc">
+                                                                                    Enjoy your favorite beverages all day long with our sleek thermal carafe. Great for coffee, tea and more, each carafe features double-wall vacuum insulation to keep drinks hot or cold for hours. Dimensions: 6" x 8.25
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="https://win19ss-test1-165c68767ee-165fd4991b1.force.com/CapStore/ccrz__Cart?cartId=f30401be-c9bc-4b85-a7fe-04ba2bf6d331&amp;viewState=&amp;portalUser=&amp;store=&amp;effectiveAccount=001B000000o2qB2IAI&amp;cclcl=en_US#comments_a0HB00000026H0YMAU" id="commentsLink cc_comments_link" data-toggle="modal">Comments</a>
+                                                                <div id="comments_a0HB00000026H0YMAU" class="modal fade cc_modal cc_cart_comments_modal" tabindex="-1" role="dialog" aria-labelledby="CartCommentsLabel">
+                                                                    <div class="modal-dialog" role="document">
+                                                                        <div class="modal-content cc_modal_content">
+                                                                            <div class="modal-header cc_modal_header">
+                                                                                <button type="button" class="close cc_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                                <h4 class="modal-title cc_modal_title" id="CartCommentsLabel">
+                                                                                    Stainless Steel Thermal Carafe
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="modal-body cc_modal_body">
+                                                                                <form id="commentsForma0HB00000026H0YMAU" class="cc_comments_form">
+                                                                                    <textarea placeholder="Enter comments here..." name="note" class="commentField form-control cc_comment_field"></textarea>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <input type="button" class="saveComment btn btn-default btn-sm cc_save_comment" data-id="a0HB00000026H0YMAU" value="Save">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messagingSection-a0HB00000026H0YMAU-Error" style="display: none"></div>
+                                                            <div class="messagingSection-a0HB00000026H0YMAU-Info alert-dismissible" style="display: none"><button type="button" class="close cc_close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                                            <div class="form-group wishFinder cc_wish_finder" data-sku="SSTC-1">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <button type="button" class="btn btn-default btn-sm deleteItem removeItemButton cc_remove_item_button" data-dismiss="modal" aria-hidden="true" data-id="a0HB00000026H0YMAU">delete</button>
+                                                                        <div class="wishButtons cc_wish_buttons">
+                                                                            <div class="btn-group dropdown form-group">
+                                                                                <button type="button" class="btn btn-default btn-sm pickWish" data-id="a0IB0000004bQIgMAM">Add to Wishlist</button>
+                                                                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                <span class="caret"></span>
+                                                                                <span class="sr-only">Toggle Dropdown</span>
+                                                                                </button>
+                                                                                <ul class="dropdown-menu" aria-labelledby="dropWish">
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="a0IB0000004bQIhMAM">Coffee Beans</a></li>
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="a0IB0000004bQIgMAM">Equipment</a></li>
+                                                                                    <li role="separator" class="divider"></li>
+                                                                                    <li>
+                                                                                        <div class="row center-block">
+                                                                                            <div class="col-xs-12">
+                                                                                                <label for="newWishList" class="sr-only">
+                                                                                                    <p>Enter new template name</p>
+                                                                                                </label>
+                                                                                                <input id="newWishList" type="text" class="newListName form-control" placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="-1">Create Template</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="quantity cc_quantity" data-id="a0HB00000026H0YMAU">
+                                                                <div class="plus_minus cc_plus-minus gp_quantity_block" data-id="a0HB00000026H0YMAU">
+                                                                    <div class="row cc_qty_control_row">
+                                                                        <div class="col-md-8 col-md-offset-4">
+                                                                            <div class="form-group">
+                                                                                <div class="input-group cc_input_group">
+                                                                                    <span class="input-group-btn cc_input_group_btn">
+                                                                                    <input type="button" value="-" class="btn btn-default btn-sm minus cc_minus">
+                                                                                    </span>
+                                                                                    <input id="entry_a0HB00000026H0YMAU" type="text" name="qty" value="1" class="input-text entry plus_minus form-control input-sm cc_entry" maxlength="7">
+                                                                                    <span class="input-group-btn cc_input_group_btn">
+                                                                                    <input type="button" value="+" class="btn btn-default btn-sm plus cc_plus">
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="hidden" name="qtyIncrement" value="1" class="item_qtyIncrement">
+                                                                    <input type="hidden" name="qtySkipIncrement" value="" class="item_qtySkipIncrement">
+                                                                </div>
+                                                            </div>
+                                                            <div class="price_block cc_price_block pull-right">
+                                                                <p class="price cc_price">
+                                                                    <span class="cc_label">Price</span>
+                                                                    <span class="cc_value">$25.00</span>
+                                                                </p>
+                                                                <p class="price cc_price">
+                                                                    <span class="cc_label">Total</span>
+                                                                    <span class="cc_value">$25.00</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                </div>
+                                                <div class="cart_item wishFinder a0HB00000026H2tMAE cc_cart_item" data-sku="">
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="cc_cart_product_image">
+                                                                        <a href="javascript:void(0);" onclick="CCRZ.goToPDP(this)" class="cc_prod_link" data-product="{&quot;name&quot;:&quot;Glass Drip Coffee Maker&quot;,&quot;SKU&quot;:&quot;GDG-1&quot;}" data-id="GDG-1"><img class="cart img-responsive" src="./10008723_TRC_Chemex_Side-1450x1015.jpg" alt="Glass Drip Coffee Maker" data-id="GDG-1"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="item_title cc_item_title">
+                                                                <a href="javascript:void(0);" onclick="CCRZ.goToPDP(this)" class="cc_prod_link" data-product="{&quot;name&quot;:&quot;Glass Drip Coffee Maker&quot;,&quot;SKU&quot;:&quot;GDG-1&quot;}" data-id="GDG-1">Glass Drip Coffee Maker</a>
+                                                            </p>
+                                                            <div class="sku cc_sku">
+                                                                <span class="cc_label">SKU</span>
+                                                                <span class="cc_value">GDG-1</span>
+                                                            </div>
+                                                            <div class="cart-links">
+                                                                <a class="included_items cc_included_items" href="https://win19ss-test1-165c68767ee-165fd4991b1.force.com/CapStore/ccrz__Cart?cartId=f30401be-c9bc-4b85-a7fe-04ba2bf6d331&amp;viewState=&amp;portalUser=&amp;store=&amp;effectiveAccount=001B000000o2qB2IAI&amp;cclcl=en_US#additional_infoa0HB00000026H2tMAE" id="additionalInfoLink" data-toggle="modal">Additional Info</a>
+                                                                &nbsp;|&nbsp;
+                                                                <div id="additional_infoa0HB00000026H2tMAE" class="modal fade cc_modal cc_cart_additional_info_modal" tabindex="-1" role="dialog" aria-labelledby="CartAddtlInfoLabel">
+                                                                    <div class="modal-dialog" role="document">
+                                                                        <div class="modal-content cc_modal_content">
+                                                                            <div class="modal-header cc_modal_header">
+                                                                                <button type="button" class="close cc_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                                <h4 class="modal-title cc_modal_title" id="CartAddtlInfoLabel">
+                                                                                    Glass Drip Coffee Maker Details
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="modal-body cc_modal_body">
+                                                                                <div class="sku cc_sku">
+                                                                                    <span class="cc_label">SKU</span>
+                                                                                    <span class="cc_value">GDG-1</span>
+                                                                                </div>
+                                                                                <p class="cc_short_desc">
+                                                                                    This pure glass, 8-cup coffeemaker to help you brew the perfect cup of coffee. It is made from non-porous Borosilicate glass, which will not absorb odors or chemical residues.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="https://win19ss-test1-165c68767ee-165fd4991b1.force.com/CapStore/ccrz__Cart?cartId=f30401be-c9bc-4b85-a7fe-04ba2bf6d331&amp;viewState=&amp;portalUser=&amp;store=&amp;effectiveAccount=001B000000o2qB2IAI&amp;cclcl=en_US#comments_a0HB00000026H2tMAE" id="commentsLink cc_comments_link" data-toggle="modal">Comments</a>
+                                                                <div id="comments_a0HB00000026H2tMAE" class="modal fade cc_modal cc_cart_comments_modal" tabindex="-1" role="dialog" aria-labelledby="CartCommentsLabel">
+                                                                    <div class="modal-dialog" role="document">
+                                                                        <div class="modal-content cc_modal_content">
+                                                                            <div class="modal-header cc_modal_header">
+                                                                                <button type="button" class="close cc_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                                <h4 class="modal-title cc_modal_title" id="CartCommentsLabel">
+                                                                                    Glass Drip Coffee Maker
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="modal-body cc_modal_body">
+                                                                                <form id="commentsForma0HB00000026H2tMAE" class="cc_comments_form">
+                                                                                    <textarea placeholder="Enter comments here..." name="note" class="commentField form-control cc_comment_field"></textarea>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <input type="button" class="saveComment btn btn-default btn-sm cc_save_comment" data-id="a0HB00000026H2tMAE" value="Save">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messagingSection-a0HB00000026H2tMAE-Error" style="display: none"></div>
+                                                            <div class="messagingSection-a0HB00000026H2tMAE-Info alert-dismissible" style="display: none"><button type="button" class="close cc_close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                                            <div class="form-group wishFinder cc_wish_finder" data-sku="GDG-1">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <button type="button" class="btn btn-default btn-sm deleteItem removeItemButton cc_remove_item_button" data-dismiss="modal" aria-hidden="true" data-id="a0HB00000026H2tMAE">delete</button>
+                                                                        <div class="wishButtons cc_wish_buttons">
+                                                                            <div class="btn-group dropdown form-group">
+                                                                                <button type="button" class="btn btn-default btn-sm pickWish" data-id="a0IB0000004bQIgMAM">Add to Wishlist</button>
+                                                                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                <span class="caret"></span>
+                                                                                <span class="sr-only">Toggle Dropdown</span>
+                                                                                </button>
+                                                                                <ul class="dropdown-menu" aria-labelledby="dropWish">
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="a0IB0000004bQIhMAM">Coffee Beans</a></li>
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="a0IB0000004bQIgMAM">Equipment</a></li>
+                                                                                    <li role="separator" class="divider"></li>
+                                                                                    <li>
+                                                                                        <div class="row center-block">
+                                                                                            <div class="col-xs-12">
+                                                                                                <label for="newWishList" class="sr-only">
+                                                                                                    <p>Enter new template name</p>
+                                                                                                </label>
+                                                                                                <input id="newWishList" type="text" class="newListName form-control" placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="-1">Create Template</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="quantity cc_quantity" data-id="a0HB00000026H2tMAE">
+                                                                <div class="plus_minus cc_plus-minus gp_quantity_block" data-id="a0HB00000026H2tMAE">
+                                                                    <div class="row cc_qty_control_row">
+                                                                        <div class="col-md-8 col-md-offset-4">
+                                                                            <div class="form-group">
+                                                                                <div class="input-group cc_input_group">
+                                                                                    <span class="input-group-btn cc_input_group_btn">
+                                                                                    <input type="button" value="-" class="btn btn-default btn-sm minus cc_minus">
+                                                                                    </span>
+                                                                                    <input id="entry_a0HB00000026H2tMAE" type="text" name="qty" value="1" class="input-text entry plus_minus form-control input-sm cc_entry" maxlength="7">
+                                                                                    <span class="input-group-btn cc_input_group_btn">
+                                                                                    <input type="button" value="+" class="btn btn-default btn-sm plus cc_plus">
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="hidden" name="qtyIncrement" value="1" class="item_qtyIncrement">
+                                                                    <input type="hidden" name="qtySkipIncrement" value="" class="item_qtySkipIncrement">
+                                                                </div>
+                                                            </div>
+                                                            <div class="price_block cc_price_block pull-right">
+                                                                <p class="price cc_price">
+                                                                    <span class="cc_label">Price</span>
+                                                                    <span class="cc_value">$28.00</span>
+                                                                </p>
+                                                                <p class="cc_prt_button_div cc_prt_button_div_cart">
+                                                                    <button type="button" class="btn btn-default btn-sm cc_prt_button cc_prt_cart_button cc_collapse_button" data-id="a0HB00000026H2tMAE" data-toggle="collapse" data-target="#cc_prt_overflow_collapse_a0HB00000026H2tMAE" aria-expanded="false"><span class="text-collapsed">Show Pricing Tiers</span><span style="display:none;" class="text-expanded">Hide Pricing Tiers</span></button>
+                                                                </p>
+                                                                <p class="price cc_price">
+                                                                    <span class="cc_label">Total</span>
+                                                                    <span class="cc_value">$28.00</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-10 col-md-offset-2">
+                                                            <div id="cc_prt_overflow_collapse_a0HB00000026H2tMAE" class="collapse cc_prt_div_outer cc_prt_div_cart_collapse_a0HB00000026H2tMAE"></div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                </div>
+                                                <div class="cart_item wishFinder a0HB00000026H2oMAE cc_cart_item" data-sku="">
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="cc_cart_product_image">
+                                                                        <a href="javascript:void(0);" onclick="CCRZ.goToPDP(this)" class="cc_prod_link" data-product="{&quot;name&quot;:&quot;Coffee Assortment&quot;,&quot;SKU&quot;:&quot;RECUR-01&quot;}" data-id="RECUR-01"><img class="cart img-responsive" src="./coffeecombo.jpg" alt="Coffee Assortment" data-id="RECUR-01"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="item_title cc_item_title">
+                                                                <a href="javascript:void(0);" onclick="CCRZ.goToPDP(this)" class="cc_prod_link" data-product="{&quot;name&quot;:&quot;Coffee Assortment&quot;,&quot;SKU&quot;:&quot;RECUR-01&quot;}" data-id="RECUR-01">Coffee Assortment</a>
+                                                            </p>
+                                                            <div class="sku cc_sku">
+                                                                <span class="cc_label">SKU</span>
+                                                                <span class="cc_value">RECUR-01</span>
+                                                            </div>
+                                                            <div class="cart-links">
+                                                                <p><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseOne">Included Items</a></p>
+                                                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                                    <h5>
+                                                                        Coffee Assortment:&nbsp;Included Items
+                                                                    </h5>
+                                                                    <div class="table-responsive">
+                                                                        <table class="cart_figures table cc_table cc_included_items">
+                                                                            <thead class="cc_table_header">
+                                                                                <tr>
+                                                                                    <th class="cc_name"></th>
+                                                                                    <th class="cc_qty">Qty</th>
+                                                                                    <th class="cc_total">Total</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="cc_name">
+                                                                                        <span class="cc_value cc_name">Splendid Sumatran Dark Roast Bean Bag</span><br><span class="cc_value cc_sku">SS-DR-BB</span>
+                                                                                    </td>
+                                                                                    <td class="cc_qty">1</td>
+                                                                                    <td class="cc_total"><span class="price cc_totalPrice">$8.00</span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="cc_name">
+                                                                                        <span class="cc_value cc_name">Stainless Steel Coffee Press</span><br><span class="cc_value cc_sku">CP-1</span>
+                                                                                    </td>
+                                                                                    <td class="cc_qty">1</td>
+                                                                                    <td class="cc_total"><span class="price cc_totalPrice">$28.00</span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="cc_name">
+                                                                                        <span class="cc_value cc_name">Coffee Filters</span><br><span class="cc_value cc_sku">CF-1</span>
+                                                                                    </td>
+                                                                                    <td class="cc_qty">1</td>
+                                                                                    <td class="cc_total"><span class="price cc_totalPrice">$7.00</span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="cc_name">
+                                                                                        <span class="cc_value cc_name">Light Roast Whole Bean Coffee</span><br><span class="cc_value cc_sku">LRW-1</span>
+                                                                                    </td>
+                                                                                    <td class="cc_qty">1</td>
+                                                                                    <td class="cc_total"><span class="price cc_totalPrice">$10.00</span></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <p><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">Additional Info</a></p>
+                                                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                                    <h5>
+                                                                        Coffee Assortment Details
+                                                                    </h5>
+                                                                    <div class="sku cc_sku">
+                                                                        <span class="cc_label">SKU</span>
+                                                                        <span class="cc_value">RECUR-01</span>
+                                                                    </div>
+                                                                    <p class="cc_short_desc">
+                                                                    </p>
+                                                                    <p><span style="color: rgb(112, 110, 107);">Put together your very own, customized selection of coffees, espressos and accessories.  The perfect assortment to key your store running like clockwork!</span></p>
+                                                                </div>
+                                                                <p><a href="https://win19ss-test1-165c68767ee-165fd4991b1.force.com/CapStore/ccrz__Cart?cartId=f30401be-c9bc-4b85-a7fe-04ba2bf6d331&amp;viewState=&amp;portalUser=&amp;store=&amp;effectiveAccount=001B000000o2qB2IAI&amp;cclcl=en_US#comments_a0HB00000026H2oMAE" id="commentsLink cc_comments_link" data-toggle="modal">Comments</a></p>
+                                                                <div id="comments_a0HB00000026H2oMAE" class="modal fade cc_modal cc_cart_comments_modal" tabindex="-1" role="dialog" aria-labelledby="CartCommentsLabel">
+                                                                    <div class="modal-dialog" role="document">
+                                                                        <div class="modal-content cc_modal_content">
+                                                                            <div class="modal-header cc_modal_header">
+                                                                                <button type="button" class="close cc_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                                <h4 class="modal-title cc_modal_title" id="CartCommentsLabel">
+                                                                                    Coffee Assortment
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="modal-body cc_modal_body">
+                                                                                <form id="commentsForma0HB00000026H2oMAE" class="cc_comments_form">
+                                                                                    <textarea placeholder="Enter comments here..." name="note" class="commentField form-control cc_comment_field"></textarea>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <input type="button" class="saveComment btn btn-default btn-sm cc_save_comment" data-id="a0HB00000026H2oMAE" value="Save">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messagingSection-a0HB00000026H2oMAE-Error" style="display: none"></div>
+                                                            <div class="messagingSection-a0HB00000026H2oMAE-Info alert-dismissible" style="display: none"><button type="button" class="close cc_close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                                            <div class="form-group wishFinder cc_wish_finder" data-sku="RECUR-01">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <button type="button" class="btn btn-default btn-sm deleteItem removeItemButton cc_remove_item_button" data-dismiss="modal" aria-hidden="true" data-id="a0HB00000026H2oMAE">delete</button>
+                                                                        <div class="wishButtons cc_wish_buttons">
+                                                                            <div class="btn-group dropdown form-group">
+                                                                                <button type="button" class="btn btn-default btn-sm pickWish" data-id="a0IB0000004bQIgMAM">Add to Wishlist</button>
+                                                                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                <span class="caret"></span>
+                                                                                <span class="sr-only">Toggle Dropdown</span>
+                                                                                </button>
+                                                                                <ul class="dropdown-menu" aria-labelledby="dropWish">
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="a0IB0000004bQIhMAM">Coffee Beans</a></li>
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="a0IB0000004bQIgMAM">Equipment</a></li>
+                                                                                    <li role="separator" class="divider"></li>
+                                                                                    <li>
+                                                                                        <div class="row center-block">
+                                                                                            <div class="col-xs-12">
+                                                                                                <label for="newWishList" class="sr-only">
+                                                                                                    <p>Enter new template name</p>
+                                                                                                </label>
+                                                                                                <input id="newWishList" type="text" class="newListName form-control" placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><a href="javascript:void(0);" class="pickWish" data-id="-1">Create Template</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="quantity cc_quantity" data-id="a0HB00000026H2oMAE">
+                                                                <div class="plus_minus cc_plus-minus gp_quantity_block" data-id="a0HB00000026H2oMAE">
+                                                                    <div class="row cc_qty_control_row">
+                                                                        <div class="col-md-8 col-md-offset-4">
+                                                                            <div class="form-group">
+                                                                                <div class="input-group cc_input_group">
+                                                                                    <span class="input-group-btn cc_input_group_btn">
+                                                                                    <input type="button" value="-" class="btn btn-default btn-sm minus cc_minus">
+                                                                                    </span>
+                                                                                    <input id="entry_a0HB00000026H2oMAE" type="text" name="qty" value="1" class="input-text entry plus_minus form-control input-sm cc_entry" maxlength="7">
+                                                                                    <span class="input-group-btn cc_input_group_btn">
+                                                                                    <input type="button" value="+" class="btn btn-default btn-sm plus cc_plus">
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="hidden" name="qtyIncrement" value="1" class="item_qtyIncrement">
+                                                                    <input type="hidden" name="qtySkipIncrement" value="" class="item_qtySkipIncrement">
+                                                                </div>
+                                                            </div>
+                                                            <div class="price_block cc_price_block pull-right">
+                                                                <p class="price cc_price">
+                                                                    <span class="cc_label">Price</span>
+                                                                    <span class="cc_value">$53.00</span>
+                                                                </p>
+                                                                <p class="price cc_price">
+                                                                    <span class="cc_label">Total</span>
+                                                                    <span class="cc_value">$53.00</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="emailModal" class="modal fade cc_modal cc_cart_additional_info_modal" tabindex="-1" role="dialog" aria-labelledby="CartEmailLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content cc_modal_content">
+                                                    <div class="modal-header cc_modal_header">
+                                                        <button type="button" class="close cc_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                        <h4 class="modal-title cc_modal_title" id="CartEmailLabel">Email Cart</h4>
+                                                    </div>
+                                                    <div class="modal-body cc_modal_body">
+                                                        <form id="emailForm" class="cc_cart_email_form">
+                                                            <div class="form-group">
+                                                                <label for="email_to">Email:To</label>
+                                                                <input id="email_to" type="email" class="form-control cc_email_to" name="toEmailAddress" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="email_cc">Email:Cc</label>
+                                                                <input id="email_cc" type="email" class="form-control cc_email_cc" name="ccEmailAddress">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="subject">Subject</label>
+                                                                <input id="subject" type="text" class="form-control cc_subject" name="subject">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="description">Description</label>
+                                                                <textarea id="description" rows="10" type="text" class="form-control cc_description" name="description"></textarea>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <input id="sendEmailBtn" type="button" class="btn btn-default btn-sm cc_send_email" value="Send">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="rfqModal" class="modal fade cc_modal cc_cart_rfq_modal" tabindex="-1" role="dialog" aria-labelledby="CartRfqLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content cc_modal_content">
+                                                    <div class="modal-header cc_modal_header">
+                                                        <button type="button" class="close cc_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                        <h4 class="modal-title cc_modal_title" id="CartRfqLabel">Request For Quote</h4>
+                                                    </div>
+                                                    <div class="modal-body cc_modal_body">
+                                                        <div class="messagingSection-rfq-Error" style="display: none"></div>
+                                                        <form id="rfqForm" class="cc_cart_email_form" novalidate="novalidate">
+                                                            <div class="form-group">
+                                                                <label for="rfq_first_name" class="rfq-firstName-label required cc_rfq-firstName-label">First Name</label>
+                                                                <input id="rfq_first_name" type="text" class="form-control rfq-firstName-input cc_rfq-firstName-input" name="rfq_first_name" value="Lauren" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="rfq_last_name" class="rfq-lastName-label required cc_rfq-lastName-label">Last Name</label>
+                                                                <input id="rfq_last_name" type="text" class="form-control rfq-lastName-input cc_rfq-lastName-input" name="rfq_last_name" value="Boyle">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="rfq_email" class="rfq-email-label required cc_rfq-email-label">Email</label>
+                                                                <input id="rfq_email" type="email" class="form-control rfq-email-input cc_rfq-email-input" name="rfq_email" value="ako.wheeler@salesforce.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="rfq_company" class="rfq-company-label required cc_rfq-company-label">Company</label>
+                                                                <input id="rfq_company" type="text" class="form-control rfq-company-inpu cc_rfq-company-input" name="rfq_company" value="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="rfq_phone" class="rfq-phone-label required cc_rfq-phone-labell">Phone</label>
+                                                                <input id="rfq_phone" type="text" class="form-control rfq-phone-input cc_rfq-phone-input" name="rfq_phone" value="1234567890">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="rfq_description" class="rfq-description-label cc_rfq-description-label">Description</label>
+                                                                <textarea id="rfq_description" rows="10" type="text" class="form-control rfq-description-input cc_rfq-description-input" name="rfq_description"></textarea>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button id="rfq_submit" class="btn btn-default btn-sm js-rfq-submit cc_js-rfq-submit">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="wishMod" class="modal fade cc_modal cc_cart_wish_modal" tabindex="-1" role="dialog" aria-labelledby="CartWishLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content cc_modal_content">
+                                                    <div class="modal-header cc_modal_header">
+                                                        <button type="button" class="close cc_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                        <h4 class="modal-title cc_modal_title" id="CartWishLabel">Create Template</h4>
+                                                    </div>
+                                                    <div class="modal-body cc_modal_body">
+                                                        <form id="renameForm" class="cc_cart_wishl_form">
+                                                            <div class="form-group">
+                                                                <label for="wishModName" class="sr-only">Name</label>
+                                                                <input id="wishModName" type="text" class="form-control cc_wish_name" name="name" placeholder="Name" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <input type="button" class="btn btn-default btn-sm createWishlist cc_create_wishlist" value="Save">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="panel panel-default cc_panel cc_shopping_cart_discount_panel">
+                                                    <div class="panel-heading cc_heading">
+                                                        <h3 class="panel-title cc_title">Discount Codes</h3>
+                                                    </div>
+                                                    <div class="cc_myaccount_content panel-body cc_body">
+                                                        <form id="couponAddForm" class="cc_coupon_add_form">
+                                                            <div class="discount_code cc_discount_code">
+                                                                <p id="couponAddError" class="cc_coupon_add_error"></p>
+                                                                <p class="cc_enter_coupon_code">Enter your coupon code if you have one.</p>
+                                                                <div class="form-group">
+                                                                    <label for="addCouponId" class="sr-only">Add Coupon</label>
+                                                                    <input type="text" id="addCouponId" name="couponId" class="form-control cc_add_coupon_id">
+                                                                    <div class="couponMessagingSection-Error"></div>
+                                                                </div>
+                                                                <button id="addCouponBtn" type="button" class="btn btn-default btn-sm cc_add_coupon">Apply Coupon</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class=" cc_action_totals pull-right">
+                                                            <button class="btn btn-default btn-sm continueShoppingButton cc_continue_shopping_button" name="" type="button">Continue Shopping</button>
+                                                            <button class="btn btn-default btn-sm cc_create_cart_wishlist" data-toggle="modal" data-target="#wishMod" name="" type="button">Create Template</button>
+                                                            <button class="btn btn-default btn-sm updateCartButton cc_update_cart_button" name="" type="button">Update</button>
+                                                            <button class="btn btn-default btn-sm remove cc_email_cart_link_button" type="button">Email Cart</button>
+                                                            <!--************-->
+                                                            <button class="btn btn-default btn-sm remove cc_rfq_link_button" type="button">Request For Quote</button>
+                                                            <!--************-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <ul class="checkout list-unstyled cc_checkout pull-right">
+                                                            <li class="grand_total cc_grand_total">
+                                                                <p class="price cc_price">
+                                                                    <span class="cc_label">Subtotal:</span>
+                                                                    <span class="cc_value">$2,906.00</span>
+                                                                </p>
+                                                            </li>
+                                                            <li class="totalsmessagingSection cc_total_messaging_section"></li>
+                                                            <li>
+                                                                <button type="button" class="btn btn-default btn-sm checkOutBtn cc_checkout_btn pull-right">Checkout</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="modalSec"></div>
+                        </div>
+                    </div>
+                    <div class="featured-prod">
+                        <!--*******************************-->
+                        <!--*******************************-->
+                    </div>
+                </div>
+            </div>   
+
+
+            <div class="container-fluid navbar-inverse cc_navbar-inverse">
+                <footer class="footer cc_footer">
+                    <div class="footerBrowser cc_footer_browser">
+                        <div class="row text-center cc_text-center">
+                            <div class="col-xs-3 cc_footer_col_left"></div>
+                            <div class="col-xs-6 cc_footer_col_center">
+                                <p></p>
+                                <!--******************************************************************************************-->
+                                <ul class="list-inline cc_list_inline">
+                                    <li class="small cc_small"><a href="#" class="navbar-link cc_footer_link">CloudCraze Home</a>&nbsp;</li>
+                                    <li class="small cc_small"><a href="#" class="navbar-link cc_footer_link">Product Information</a>&nbsp;</li>
+                                    <li class="small cc_small"><a href="#" class="navbar-link cc_footer_link">View Cloud-Craze Demo</a>&nbsp;</li>
+                                    <li class="small cc_small"><a href="#" class="navbar-link cc_footer_link">About US</a>&nbsp;</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-3 cc_footer_col_right"></div>
+                        </div>
+                        <div class="row cc_footer_logo_row">
+                            <div class="col-xs-12 cc_footer_logo_col">
+                                <img src="./Tiered Pricing for Subscriptions_files/ccrz_logo_h_reverse.png" class="center-block cc_footer_logo" height="50" width="auto" alt="CloudCraze Logo">
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <ul class="nav pull-right scroll-top cc_scroll-top">
+                    <li><a href="#" title="Scroll to top"><i aria-hidden="true" class="fa fa-chevron-up"></i><span class="sr-only">Scroll to top</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="../Bootstrap Starter/Starter Template for Bootstrap_files/jquery.min.js"></script>
+        <script type="text/javascript" src="../Bootstrap Starter/Starter Template for Bootstrap_files/bootstrap.min.js"></script>
+    </body>
+</html>
